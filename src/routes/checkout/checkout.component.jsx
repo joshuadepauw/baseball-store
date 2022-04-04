@@ -8,6 +8,7 @@ import './checkout.styles.scss';
 
 const Checkout = () => {
     const { cartItems, cartTotal} = useContext(CartContext);
+    const roundedTotal = cartTotal.toFixed(2);
 
     return(
 
@@ -32,7 +33,7 @@ const Checkout = () => {
             {cartItems.map((cartItem) => (
                    <CheckoutItem key={cartItem.id} cartItem={cartItem} />
                 ))}
-            <span className='total'>Total: ${cartTotal}</span>
+            <span className='total'>Total: ${roundedTotal}</span>
         </div>
         
     );
