@@ -194,7 +194,7 @@ const SHOP_DATA = [
       ],
     },
     {
-      title: 'Bags',
+      title: 'Bags (view all)',
       items: [
         {
           id: 30,
