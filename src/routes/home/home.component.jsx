@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Directory from '../../components/directory/directory.component';
 
 
@@ -31,7 +33,11 @@ const categories = [
   },
 ];
 
-  return <Directory categories={categories}/>  
+  return(
+    <Link className='nav-link' to='/shop'>
+      <Directory categories={categories}/>  
+    </Link>
+  ) 
 };
 
 

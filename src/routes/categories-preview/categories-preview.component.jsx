@@ -1,4 +1,5 @@
-import { Fragment, useContext } from "react";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 import { CategoriesContext } from "../../contexts/categories.context";
 import CategoryPreview from "../../components/category-preview/category-preview.component";
@@ -7,15 +8,16 @@ import CategoryPreview from "../../components/category-preview/category-preview.
 const CategoriesPreview = () => {
     const { categoriesMap } = useContext(CategoriesContext);
 
-    return (
-        <Fragment>
+    return ( 
+                <Link className='nav-link' to={'/shop/bags'}>     
            {Object.keys(categoriesMap).map((title) => {
                const products = categoriesMap[title];
                return(
-                    <CategoryPreview key={title} title={title} products={products}/>
-               );
-           })} 
-            </Fragment>
+                   <CategoryPreview key={title} title={title} products={products}/>
+                   );
+                })} 
+                </Link>
+       
     );
 };
 
