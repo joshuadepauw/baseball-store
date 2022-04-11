@@ -9,14 +9,16 @@ const CategoriesPreview = () => {
     const { categoriesMap } = useContext(CategoriesContext);
 
     return ( 
-                <Link className='nav-link' to={'/shop/bags'}>     
+                // <Link className='nav-link' to={'/shop/bags'}>    
+                <>
            {Object.keys(categoriesMap).map((title) => {
                const products = categoriesMap[title];
                return(
                    <CategoryPreview key={title} title={title} products={products}/>
                    );
                 })} 
-                </Link>
+                {/* </Link> */}
+                </> 
        
     );
 };

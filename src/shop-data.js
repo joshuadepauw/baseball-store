@@ -191,10 +191,16 @@ const SHOP_DATA = [
           imageUrl: 'https://images.dickssportinggoods.com/is/image/dkscdn/18ADIMDLTTRLGYGLVBTG_Red_is/?wid=252&hei=252&qlt=85,0&fmt=jpg&op_sharpen=1',
           price: 24.99,
         },
+        {
+          id: 36,
+          name: 'Marucci Blacksmith',
+          imageUrl: 'https://images.dickssportinggoods.com/is/image/dkscdn/20MCCMBLCKSMTHFLLBTG_Brown_Tan_is/?wid=252&hei=252&qlt=85,0&fmt=jpg&op_sharpen=1',
+          price: 54.99,
+        },
       ],
     },
     {
-      title: 'Bags (view all)',
+      title: 'Bags',
       items: [
         {
           id: 30,

@@ -24,7 +24,7 @@ const resetFormFields = () => {
 const handleSubmit = async (event) => {
     event.preventDefault();
 
-    if(password != confirmPassword){ 
+    if(password !== confirmPassword){ 
         alert("passwords do not match");
         return;
     }
@@ -40,7 +40,7 @@ const handleSubmit = async (event) => {
             console.log(user)
 
     }catch(error){
-        if(error.code == 'auth/email-already-in-use'){
+        if(error.code === 'auth/email-already-in-use'){
             alert("cannot pick an email that another person has already picked bud")
         }else{
             console.log('user creating encountered an error', error);
